@@ -47,7 +47,7 @@ jobs:
       run: pytest tests
 
     - name: Report coverage with Codecov
-      uses: codecov/codecov-action@v3
+      uses: codecov/codecov-action@v6
       with:
         files: ./coverage.xml
         flags: unittests-${{ matrix.python-version }}
