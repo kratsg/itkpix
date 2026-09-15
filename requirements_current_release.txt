@@ -1,0 +1,15 @@
+awkward
+boost-histogram
+decaylanguage
+hepstats
+hepunits
+hist
+histoprint
+iminuit
+matplotlib
+mplhep
+particle
+pylhe
+resample
+uproot
+vector
