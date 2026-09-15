@@ -1,0 +1,27 @@
+# dependabot.yml
+
+version: 2
+updates:
+
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    reviewers:
+      - "kratsg"
+    commit-message:
+      prefix: "chore: [gha]"
+
+  # Maintain dependencies for python
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    reviewers:
+      - "kratsg"
+    commit-message:
+      prefix: "chore: [pip]"
+    ignore:
+       - dependency-name: "*"
+         update-types: ["version-update:semver-patch"]
